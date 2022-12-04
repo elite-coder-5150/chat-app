@@ -1,0 +1,40 @@
+{
+  "name": "chat-app",
+  "version": "0.4.1",
+  "description": "simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite-coder-5150/chat-app.git"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "html",
+    "scss",
+    "javascript"
+  ],
+  "author": "darrell parkhouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elite-coder-5150/chat-app/issues"
+  },
+  "homepage": "https://github.com/elite-coder-5150/chat-app#readme",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^7.2.0",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3",
+    "moment": "^2.29.4",
+    "redis": "^4.5.1",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
