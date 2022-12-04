@@ -62,3 +62,54 @@ function outputUsers(users) {
         ${users.map(user => ` ${user.username} `).join('')}
     `;
 }
+
+// dijkstra's algorithm please
+const dijkstra = (graph, source) => {
+    const dist = {};
+    for (let node in graph) {
+        dist[node] = Infinity;
+    }
+    dist[source] = 0;
+
+    const unvisited = new Set(Object.keys(graph));
+    const previous = {};
+
+    while (unvisited.size > 0) {
+        const currNode = minDistanceNode(unvisited, dist);
+        unvisited.delete(currNode);
+
+        for (let neighbor in graph[currNode]) {
+            const distance = graph[currNode][neighbor];
+            if (distance + dist[currNode] < dist[neighbor]) {
+                dist[neighbor] = distance + dist[currNode];
+                previous[neighbor] = currNode;
+            }
+        }
+    }
+    return [dist, previous];
+}
+
+const minDistanceNode = (nodes, dist) => {
+    return Array.from(nodes).reduce((min, node) => dist[node] < dist[min] ? node : min);
+}
+
+const path = (previous, end) => {
+    const nodes = [end];
+    while (previous[end]) {
+        nodes.push(previous[end]);
+        end = previous[end];
+    }
+    return nodes.reverse();
+}
+
+const graph = {
+    start: { A: 5, B: 2 },
+    A: { C: 4, D: 2 },
+    B: { A: 8, D: 7 },
+    C: { D: 6, finish: 3 },
+    D: { finish: 1 },
+    finish: {}
+};
+
+const [dist, previous] = dijkstra(graph, 'start');
+console.log(dist);
