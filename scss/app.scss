@@ -1,22 +1,7 @@
 @import "partials/vars";
+@import "partials/base";
 @import "partials/chat";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: $base-font-family;
-    font-size: 14px;
-    background: var(--light-color);
-    margin: 20px;
-}
 
-:root {
-    --dark-color-a: #667eff;
-    --dark-color-b: #764ba2;
-    --light-color: #e6e9ff;
-    --success-color: #00d1b2;
-    --error-color: #ff3860;
-}
+
+
 
