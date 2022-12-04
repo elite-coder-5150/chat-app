@@ -182,3 +182,193 @@ a {
     display: none;
   }
 }
+:root {
+  --dark-color-a: #667eff;
+  --dark-color-b: #764ba2;
+  --light-color: #e6e9ff;
+  --success-color: #00d1b2;
+  --error-color: #ff3860;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  background: #fff;
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  /***** end of header *****/
+}
+.menu header {
+  padding: 16px 16px;
+  border-bottom: 1px solid #EAECF0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  text-transform: capitalize;
+}
+.menu header .info {
+  margin-left: 12px;
+  margin-top: 3px;
+}
+.menu header .info .username,
+.menu header .info .email {
+  font-size: 14px;
+  color: #445469;
+}
+.menu header .info .email {
+  text-transform: lowercase;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-top: 3px;
+}
+.menu header .info .username {
+  font-weight: 500;
+}
+.menu .accounts,
+.menu .company,
+.menu .support,
+.menu footer {
+  list-style: none;
+  width: 100%;
+  padding: 0 0 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EAECF0;
+}
+.menu .accounts li,
+.menu .company li,
+.menu .support li,
+.menu footer li {
+  display: flex;
+  height: 35px;
+  text-transform: capitalize;
+  padding: 11px 16px;
+  font-size: 14px;
+}
+.menu .accounts li:last-child,
+.menu .company li:last-child,
+.menu .support li:last-child,
+.menu footer li:last-child {
+  border-bottom: none;
+}
+.menu .accounts .icon,
+.menu .company .icon,
+.menu .support .icon,
+.menu footer .icon {
+  margin-right: 10px;
+}
+.menu .accounts .icon .user-icon,
+.menu .company .icon .user-icon,
+.menu .support .icon .user-icon,
+.menu footer .icon .user-icon {
+  background: url("../img/icons/user-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .settings-icon,
+.menu .company .icon .settings-icon,
+.menu .support .icon .settings-icon,
+.menu footer .icon .settings-icon {
+  background: url("../img/icons/settings-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .lightning-bolt-icon,
+.menu .company .icon .lightning-bolt-icon,
+.menu .support .icon .lightning-bolt-icon,
+.menu footer .icon .lightning-bolt-icon {
+  background: url("../img/icons/lighting-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .email-icon,
+.menu .company .icon .email-icon,
+.menu .support .icon .email-icon,
+.menu footer .icon .email-icon {
+  background: url("../img/icons/email-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .team-icon,
+.menu .company .icon .team-icon,
+.menu .support .icon .team-icon,
+.menu footer .icon .team-icon {
+  background: url("../img/icons/team-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .invite-icon,
+.menu .company .icon .invite-icon,
+.menu .support .icon .invite-icon,
+.menu footer .icon .invite-icon {
+  background: url("../img/icons/invite-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .change-log-icon,
+.menu .company .icon .change-log-icon,
+.menu .support .icon .change-log-icon,
+.menu footer .icon .change-log-icon {
+  background: url("../img/icons/change-log-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .slack-icon,
+.menu .company .icon .slack-icon,
+.menu .support .icon .slack-icon,
+.menu footer .icon .slack-icon {
+  background: url("../img/icons/slack-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .support-icon,
+.menu .company .icon .support-icon,
+.menu .support .icon .support-icon,
+.menu footer .icon .support-icon {
+  background: url("../img/icons/support-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .api-icon,
+.menu .company .icon .api-icon,
+.menu .support .icon .api-icon,
+.menu footer .icon .api-icon {
+  background: url("../img/icons/api-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .icon .logout-icon,
+.menu .company .icon .logout-icon,
+.menu .support .icon .logout-icon,
+.menu footer .icon .logout-icon {
+  background: url("../img/icons/log-out-icon.png") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.menu .accounts .support,
+.menu .company .support,
+.menu .support .support,
+.menu footer .support {
+  border-bottom: none;
+}
+.menu .accounts .accounts,
+.menu .company .accounts,
+.menu .support .accounts,
+.menu footer .accounts {
+  height: 135px;
+}
+.menu .accounts .system li,
+.menu .company .system li,
+.menu .support .system li,
+.menu footer .system li {
+  border-bottom: none;
+}
+.menu footer {
+  border-bottom: none;
+  height: 40px;
+  padding-top: 0;
+}
