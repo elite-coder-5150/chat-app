@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $base-font-family;
+    font-size: 14px;
+    background: var(--light-color);
+    margin: 20px;
+}
