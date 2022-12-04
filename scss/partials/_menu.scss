@@ -1,0 +1,153 @@
+@import "vars";
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    background: $clr-light-text;
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: $box-shadow;
+    border: 1px solid $clr-base-border;
+    border-radius: 8px;
+
+    header {
+        padding: 16px 16px;
+        border-bottom: 1px solid $clr-base-border;
+        height: 70px;
+        width: 100%;
+
+        display: flex;
+        text-transform: capitalize;
+
+        .info {
+            margin-left: 12px;
+            margin-top: 3px;
+            .username,
+            .email {
+                font-size: 14px;
+                color: #445469;
+            }
+
+            .email {
+                text-transform: lowercase;
+                font-size: 13px;
+                font-weight: 500;
+                opacity: 0.6;
+                margin-top: 3px;
+            }
+            .username {
+                font-weight: 500;
+            }
+        }
+    } /***** end of header *****/
+
+    .accounts,
+    .company,
+    .support,
+    footer {
+        list-style: none;
+        width: 100%;
+        padding: 0 0 10px 0;
+        margin-bottom: 10px;
+    
+        border-bottom: 1px solid $clr-base-border;
+        li {
+            display: flex;
+            height: 35px;
+            text-transform: capitalize;
+            padding: 11px 16px;
+            font-size: 14px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .icon {
+            margin-right: 10px;
+            .user-icon {
+                background: url('../img/icons/user-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+            .settings-icon {
+                background: url('../img/icons/settings-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .lightning-bolt-icon {
+                background: url('../img/icons/lighting-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .email-icon {
+                background: url('../img/icons/email-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+            .team-icon {
+                background: url('../img/icons/team-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .invite-icon {
+                background: url('../img/icons/invite-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .change-log-icon {
+                background: url('../img/icons/change-log-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .slack-icon {
+                background: url('../img/icons/slack-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .support-icon {
+                background: url('../img/icons/support-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .api-icon {
+                background: url('../img/icons/api-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+
+            .logout-icon {
+                background: url('../img/icons/log-out-icon.png') no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .support {
+            border-bottom: none;
+        }
+
+        .accounts {
+            height: 135px;
+        }
+
+        .system {
+            li {
+                border-bottom: none;
+            }
+        }
+    }
+
+    footer {
+        border-bottom: none;
+        height: 40px;
+        padding-top: 0;
+    }
+}
